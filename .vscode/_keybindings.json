@@ -54,4 +54,9 @@
 		"command": "workbench.action.tasks.runTask",
 		"args": "Run: Debug"
 	},
+	{
+		"key": "alt+f10",
+		"command": "workbench.action.tasks.runTask",
+		"args": "Build: Debug"
+	}
 ]

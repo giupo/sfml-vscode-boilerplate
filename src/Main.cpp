@@ -1,11 +1,10 @@
 #include "Platform/Platform.hpp"
 
-int main()
-{
+int main() {
 	util::Platform platform;
 
 #if defined(_DEBUG)
-	std::cout << "Hello World!" << std::endl;
+	std::cout << "Fuck the system!" << std::endl;
 #endif
 
 	sf::RenderWindow window;
@@ -24,10 +23,8 @@ int main()
 
 	sf::Event event;
 
-	while (window.isOpen())
-	{
-		while (window.pollEvent(event))
-		{
+	while (window.isOpen()) {
+		while (window.pollEvent(event)) {
 			if (event.type == sf::Event::Closed)
 				window.close();
 		}

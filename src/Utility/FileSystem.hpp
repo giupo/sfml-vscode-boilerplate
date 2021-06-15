@@ -8,12 +8,11 @@
 	#include <experimental/filesystem>
 #endif
 
-namespace util
-{
+namespace util {
 #if __GNUC__ >= 8 || __clang_major__ >= 9
-namespace fs = std::filesystem;
+	namespace fs = std::filesystem;
 #else
-namespace fs = std::experimental::filesystem::v1;
+	namespace fs = std::experimental::filesystem::v1;
 #endif
 }
 

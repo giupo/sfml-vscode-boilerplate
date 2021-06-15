@@ -9,14 +9,13 @@
 	#include "Platform/Win32/WindowsPlatform.hpp"
 #endif
 
-namespace util
-{
+namespace util {
 #if defined(__APPLE__)
-using Platform = MacOSPlatform;
+	using Platform = MacOSPlatform;
 #elif defined(__linux__)
-using Platform = LinuxPlatform;
+	using Platform = LinuxPlatform;
 #elif defined(_WIN32)
-using Platform = WindowsPlatform;
+	using Platform = WindowsPlatform;
 #endif
 }
 #endif // UTIL_PLATFORM_HPP
